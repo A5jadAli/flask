@@ -1,6 +1,6 @@
 # Flask
 
-This repository is designed to help beginners learn Flask from scratch, including building a web app and deploying a machine-learning model. We'll start with the basics and gradually move to more advanced topics.
+This repository is designed to help beginners learn Flask from scratch, including building a web app and deploying a machine learning model. We'll start with the basics and gradually move to more advanced topics.
 
 ## Getting Started
 
