@@ -1,3 +1,4 @@
+import time
 from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
@@ -17,9 +18,11 @@ def failed():
 @app.route('/score/<string:name>/<int:marks>')
 def score(name, marks):
     if marks < 30:
+        time.sleep(2)
         # redirect to failed page
         return redirect(url_for('failed'))
     else:
+        time.sleep(2)
         # redirect to passed page
         return redirect(url_for('passed'))
 
