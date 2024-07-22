@@ -58,5 +58,3 @@ Topics Covered
 ### Contributing
 
 If you find any issues or have suggestions for improvements, please open an issue or submit a pull request, and don't forget to star this repository.
-
-Happy Learning!
