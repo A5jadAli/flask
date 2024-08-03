@@ -1,1 +1,1 @@
-## This is where we will start DB
+## This is where we will start SQL Alchemy and create the database
