@@ -12,6 +12,7 @@ class Team(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     team = db.Column(db.String(30), nullable=False, unique=True)
     state = db.Column(db.String(30), nullable=False)
+    members = db.relationship('Player', backref='team', lazy=True)
 
     def __repr__(self):
         return f"Team('{self.team}', '{self.state}')"
@@ -22,13 +23,9 @@ class Player(db.Model):
     name = db.Column(db.String(30), nullable=False)
     nationality = db.Column(db.String(30), nullable=False)
     team_id = db.Column(db.Integer, db.ForeignKey('teams.id'), nullable=False)
-    team = db.relationship('Team', backref='players')
 
     def __repr__(self):
         return f"Player('{self.name}', '{self.nationality}', '{self.team}')"
 
 if __name__ == '__main__':
-    app.app_context().push()
-    db.create_all()
-    db.session.commit()
     app.run(debug=True)
