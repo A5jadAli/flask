@@ -53,6 +53,7 @@ Topics Covered
 - Templates
 - Forms
 - Database integration
+- sessions/cookies
 - Deploying a machine-learning model
 
 ### Contributing
